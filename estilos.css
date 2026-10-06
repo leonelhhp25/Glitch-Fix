@@ -1,0 +1,400 @@
+/* =========================================================
+   GLITCHFIX - ESTILOS PRINCIPALES
+   ========================================================= */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111;line-height:1.6}
+a{text-decoration:none;color:inherit}
+section{width:100%}
+
+/* ---------- ENCABEZADO ---------- */
+header{width:100%;min-height:80px;display:flex;align-items:center;justify-content:space-between;padding:20px 7%;background:#fff;border-bottom:2px solid #111;position:sticky;top:0;z-index:1000}
+.logo{font-size:1.8rem;font-weight:900;letter-spacing:2px}
+.logo span{color:#19d9ff}
+nav{display:flex;align-items:center;gap:28px}
+nav a{font-size:.9rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;transition:.3s ease}
+nav a:hover{color:#19d9ff}
+
+/* ---------- HERO ---------- */
+.hero{min-height:650px;display:flex;align-items:center;justify-content:space-between;padding:80px 7%;background:linear-gradient(135deg,#fff 0%,#fff 65%,#f2fbff 100%);overflow:hidden}
+.hero-text{width:52%}
+.status{display:inline-block;margin-bottom:18px;font-size:.75rem;font-weight:800;letter-spacing:2px;color:#19aeca}
+.hero h1{font-size:clamp(3rem,6vw,5.5rem);line-height:.95;font-weight:900;letter-spacing:-3px}
+.hero h1 span{color:#ff2ea6}
+.hero h2{margin-top:12px;font-size:clamp(2rem,4vw,3.5rem);line-height:1;font-weight:900}
+.hero-text>p:not(.status){max-width:600px;margin-top:25px;color:#555;font-size:1.05rem}
+
+/* ---------- BOTONES ---------- */
+.hero-buttons{display:flex;gap:15px;margin-top:35px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 25px;border:2px solid #111;font-size:.85rem;font-weight:800;text-transform:uppercase;transition:.3s ease}
+.btn-primary{background:#111;color:#fff}
+.btn-primary:hover{background:#19d9ff;border-color:#19d9ff;color:#111;transform:translateY(-3px)}
+.btn-secondary{background:#fff;color:#111}
+.btn-secondary:hover{background:#ff2ea6;border-color:#ff2ea6;color:#fff;transform:translateY(-3px)}
+
+/* ---------- LAPTOP ---------- */
+/* ---------- LOGO GLITCHFIX ---------- */
+.hero-device{width:43%;display:flex;align-items:center;justify-content:center}
+.glitch-logo{position:relative;width:440px;height:440px;max-width:100%;display:flex;align-items:center;justify-content:center;animation:floatingLogo 4s ease-in-out infinite}
+.glitch-ring{width:300px;height:300px;border:4px solid #111;border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;background:#fff;box-shadow:10px 10px 0 #19d9ff,-10px -10px 0 #ff2ea6}
+.glitch-ring::before{content:"";position:absolute;width:330px;height:330px;border:1px dashed #19d9ff;border-radius:50%}
+.glitch-logo-text{text-align:center;position:relative;z-index:2}
+.glitch-logo-text strong{display:block;font-size:2.7rem;font-weight:900;letter-spacing:-2px}
+.glitch-logo-text span{font-size:2.7rem;font-weight:900;color:#19d9ff;letter-spacing:-2px}
+.glitch-logo-text small{display:block;margin-top:12px;font-size:.55rem;font-weight:800;letter-spacing:1.5px;color:#666}
+.circuit{position:absolute;width:95px;height:30px}
+.circuit span,.circuit i,.circuit b{position:absolute;display:block}
+.circuit span{width:55px;height:2px;background:#111;top:14px}
+.circuit i{width:8px;height:8px;border:2px solid #19d9ff;border-radius:50%;top:10px;background:#fff}
+.circuit b{width:7px;height:7px;background:#ff2ea6;border-radius:50%;top:11px}
+.circuit-1{top:50px;left:175px;transform:rotate(-5deg)}
+.circuit-1 span{left:0}
+.circuit-1 i{left:50px}
+.circuit-1 b{left:70px}
+.circuit-2{top:105px;right:30px;transform:rotate(40deg)}
+.circuit-2 span{left:0}
+.circuit-2 i{left:50px}
+.circuit-2 b{left:70px}
+.circuit-3{top:205px;right:0;transform:rotate(90deg)}
+.circuit-3 span{left:0}
+.circuit-3 i{left:50px}
+.circuit-3 b{left:70px}
+.circuit-4{bottom:55px;right:75px;transform:rotate(145deg)}
+.circuit-4 span{left:0}
+.circuit-4 i{left:50px}
+.circuit-4 b{left:70px}
+.circuit-5{bottom:15px;left:170px;transform:rotate(180deg)}
+.circuit-5 span{left:0}
+.circuit-5 i{left:50px}
+.circuit-5 b{left:70px}
+.circuit-6{bottom:65px;left:65px;transform:rotate(225deg)}
+.circuit-6 span{left:0}
+.circuit-6 i{left:50px}
+.circuit-6 b{left:70px}
+.circuit-7{top:205px;left:0;transform:rotate(270deg)}
+.circuit-7 span{left:0}
+.circuit-7 i{left:50px}
+.circuit-7 b{left:70px}
+.circuit-8{top:105px;left:30px;transform:rotate(320deg)}
+.circuit-8 span{left:0}
+.circuit-8 i{left:50px}
+.circuit-8 b{left:70px}
+@keyframes floatingLogo{0%{transform:translateY(0)}50%{transform:translateY(-10px)}100%{transform:translateY(0)}}
+/* ---------- SERVICIOS ---------- */
+.services-preview{padding:100px 7%;background:#111;color:#fff}
+.section-title{margin-bottom:50px}
+.section-title p{color:#19d9ff;font-size:.75rem;font-weight:800;letter-spacing:2px}
+.section-title h2{margin-top:10px;font-size:clamp(2rem,4vw,3.5rem);line-height:1}
+.service-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.service-card{min-height:280px;padding:30px;border:1px solid #444;background:#171717;transition:.3s ease}
+.service-card:hover{transform:translateY(-8px);border-color:#19d9ff;box-shadow:6px 6px 0 #ff2ea6}
+.service-circuit{position:relative;height:35px;margin:0 0 5px;display:grid;grid-template-columns:repeat(4,1fr);align-items:center}
+.circuit-line{position:absolute;top:17px;left:12.5%;right:12.5%;height:2px;background:#444}
+.circuit-node{position:relative;z-index:2;width:12px;height:12px;margin:auto;border:2px solid #19d9ff;border-radius:50%;background:#111;box-shadow:0 0 0 4px #111}
+.circuit-node:nth-of-type(even){border-color:#ff2ea6}
+.service-card{position:relative}
+.service-card::before{content:"";position:absolute;top:-18px;left:50%;width:2px;height:18px;background:#444;transform:translateX(-50%)}
+.service-card:hover::before{background:#19d9ff}
+
+/* ---------- REPAIRLIVE ---------- */
+/* ---------- REPAIRLIVE ---------- */
+.repairlive{display:grid;grid-template-columns:1fr 1fr;gap:70px;padding:110px 7%;background:#f4f4f4}
+.repairlive-content h2{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1}
+.repairlive-content h2 span{color:#19aeca}
+.repairlive-content>p:not(.status){max-width:500px;margin:25px 0;color:#555}
+.repair-progress{position:relative;display:flex;flex-direction:column;justify-content:center;padding:20px 0}
+.progress-line{position:absolute;top:35px;bottom:35px;left:25px;width:2px;background:#ccc}
+.progress-step{position:relative;display:flex;align-items:center;gap:20px;min-height:80px;padding-left:0;color:#888;font-weight:700}
+.progress-step>span{position:relative;z-index:2;width:52px;height:52px;display:flex;align-items:center;justify-content:center;border:2px solid #bbb;border-radius:50%;background:#f4f4f4;font-size:.75rem;font-weight:900}
+.progress-step>div{display:flex;flex-direction:column}
+.progress-step strong{font-size:1rem;color:#777}
+.progress-step small{margin-top:3px;color:#aaa;font-size:.7rem;font-weight:400}
+.progress-step.completed>span{border-color:#19d9ff;background:#111;color:#19d9ff;box-shadow:0 0 0 5px #f4f4f4}
+.progress-step.completed strong{color:#111}
+.progress-step.active>span{border-color:#ff2ea6;background:#ff2ea6;color:#fff;box-shadow:0 0 0 5px #f4f4f4}
+.progress-step.active strong{color:#111}
+.progress-step.active small{color:#ff2ea6}
+.progress-step.completed::after,.progress-step.active::after{content:"";position:absolute;z-index:1;left:25px;top:65px;width:2px;height:15px;background:#19d9ff}
+
+/* ---------- NOSOTROS PREVIEW ---------- */
+.about-preview{display:grid;grid-template-columns:1fr 1fr;gap:80px;padding:100px 7%}
+.about-preview h2{margin-top:10px;font-size:clamp(2.5rem,5vw,4rem);line-height:1}
+.about-preview>p{align-self:center;color:#555;font-size:1.1rem}
+
+/* ---------- CTA ---------- */
+.cta{padding:100px 7%;text-align:center;background:#19d9ff;color:#111}
+.cta p{font-weight:800;text-transform:uppercase;letter-spacing:2px}
+.cta h2{margin:10px 0 30px;font-size:clamp(3rem,7vw,6rem);line-height:1;font-weight:900}
+.cta .btn{background:#111;color:#fff;border-color:#111}
+.cta .btn:hover{background:#ff2ea6;border-color:#ff2ea6}
+
+/* ---------- FOOTER ---------- */
+footer{padding:50px 7%;background:#111;color:#fff;text-align:center}
+.footer-logo{font-size:1.7rem;font-weight:900;letter-spacing:2px}
+.footer-logo span{color:#19d9ff}
+footer p{margin-top:10px;color:#888;font-size:.85rem}
+
+/* ---------- ANIMACIONES ---------- */
+@keyframes floatingLaptop{0%{transform:translateY(0)}50%{transform:translateY(-12px)}100%{transform:translateY(0)}}
+@keyframes loading{0%{width:20%}100%{width:90%}}
+
+/* ---------- PÁGINA NOSOTROS ---------- */
+.page-header{min-height:500px;display:flex;flex-direction:column;justify-content:center;padding:100px 7%;background:#111;color:#fff}
+.page-header .status{color:#19d9ff}
+.page-header h1{max-width:1000px;margin-top:10px;font-size:clamp(3rem,7vw,6.5rem);line-height:.9;font-weight:900;letter-spacing:-4px}
+.page-header h1 span{color:#ff2ea6}
+.page-header>p:last-child{max-width:650px;margin-top:30px;color:#aaa;font-size:1.1rem}
+.about-company{display:grid;grid-template-columns:1fr 1fr;gap:80px;padding:110px 7%}
+.about-company-title h2{margin-top:10px;font-size:clamp(2.5rem,5vw,4.5rem);line-height:.95;letter-spacing:-2px}
+.about-company-title h2 span{color:#19aeca}
+.about-company-text{display:flex;flex-direction:column;gap:25px;align-self:center}
+.about-company-text p{color:#555;font-size:1.05rem}
+.mission-vision{display:grid;grid-template-columns:1fr 1fr;background:#f2f2f2}
+.info-block{min-height:420px;padding:60px 7%;border:1px solid #ddd;position:relative}
+.info-number{color:#ff2ea6;font-size:.8rem;font-weight:900;letter-spacing:2px}
+.info-block h2{margin-top:70px;font-size:clamp(2.5rem,5vw,4rem);line-height:1}
+.info-block p{max-width:600px;margin-top:25px;color:#555;font-size:1.05rem}
+.info-block:first-child{border-top:5px solid #19d9ff}
+.info-block:last-child{border-top:5px solid #ff2ea6}
+.values{padding:110px 7%}
+.value-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}
+.value-card{min-height:260px;padding:25px;border:1px solid #ccc;transition:.3s ease}
+.value-card span{color:#19d9ff;font-size:.8rem;font-weight:900}
+.value-card h3{margin-top:45px;font-size:1.3rem}
+.value-card p{margin-top:15px;color:#666;font-size:.9rem}
+.value-card:hover{background:#111;color:#fff;border-color:#111;transform:translateY(-8px)}
+.value-card:hover p{color:#aaa}
+.value-card:hover span{color:#ff2ea6}
+.difference{display:grid;grid-template-columns:1fr 1fr;gap:80px;padding:110px 7%;background:#111;color:#fff}
+.difference h2{max-width:600px;margin-top:10px;font-size:clamp(2.5rem,5vw,4.5rem);line-height:.95}
+.difference h2 span{color:#19d9ff}
+.difference-list{display:flex;flex-direction:column}
+.difference-list>div{display:flex;align-items:center;gap:25px;min-height:85px;border-bottom:1px solid #333}
+.difference-list strong{color:#ff2ea6;font-size:.8rem}
+.difference-list p{color:#ccc}
+
+/* ---------- PÁGINA SERVICIOS ---------- */
+.services-intro{display:grid;grid-template-columns:1fr 1fr;gap:80px;padding:100px 7%}
+.services-intro h2{max-width:650px;margin-top:10px;font-size:clamp(2.5rem,5vw,4.5rem);line-height:.95}
+.services-intro>p{align-self:center;max-width:550px;color:#555;font-size:1.05rem}
+.catalog{padding:0 7% 110px}
+.catalog-card{display:grid;grid-template-columns:80px 1fr 220px;gap:40px;align-items:center;min-height:280px;padding:40px;margin-bottom:15px;border:1px solid #ccc;background:#fff;transition:.3s ease}
+.catalog-card:hover{border-color:#19d9ff;transform:translateX(8px);box-shadow:8px 8px 0 #111}
+.catalog-number{align-self:flex-start;color:#19d9ff;font-size:1rem;font-weight:900;letter-spacing:2px}
+.catalog-content h2{font-size:1.8rem;line-height:1.1}
+.catalog-content p{max-width:700px;margin-top:15px;color:#666}
+.catalog-content ul{display:flex;flex-wrap:wrap;gap:10px 25px;margin-top:20px;padding:0;list-style:none}
+.catalog-content li{color:#333;font-size:.85rem;font-weight:700}
+.catalog-content li::before{content:"✓";margin-right:7px;color:#ff2ea6}
+.catalog-price{display:flex;flex-direction:column;align-items:flex-end;text-align:right}
+.catalog-price span{color:#888;font-size:.7rem;font-weight:800;letter-spacing:1px}
+.catalog-price strong{margin:5px 0 20px;font-size:2rem}
+.service-button{padding:12px 18px;border:2px solid #111;background:#111;color:#fff;cursor:pointer;font-size:.7rem;font-weight:800;text-transform:uppercase;transition:.3s ease}
+.service-button:hover{background:#ff2ea6;border-color:#ff2ea6;transform:translateY(-2px)}
+.service-note{display:grid;grid-template-columns:1fr 1fr;gap:70px;padding:90px 7%;background:#f2f2f2}
+.service-note h2{max-width:650px;margin-top:10px;font-size:clamp(2.2rem,4vw,3.5rem);line-height:.95}
+.service-note>div:last-child{align-self:center}
+.service-note>div:last-child p{margin-bottom:25px;color:#555}
+
+/* ---------- PÁGINA CONTACTO ---------- */
+.contact-section{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;padding:110px 7%}
+.contact-info h2{max-width:500px;margin-top:10px;font-size:clamp(2.5rem,5vw,4.5rem);line-height:.95}
+.contact-info h2 span{color:#19d9ff}
+.contact-data{display:flex;flex-direction:column;gap:25px;margin-top:60px}
+.contact-item{padding-bottom:20px;border-bottom:1px solid #ddd}
+.contact-item span{color:#ff2ea6;font-size:.7rem;font-weight:900;letter-spacing:2px}
+.contact-item p{margin-top:5px;color:#444}
+.contact-form{padding:40px;background:#111;color:#fff;border-top:5px solid #19d9ff;box-shadow:10px 10px 0 #ff2ea6}
+.form-group{display:flex;flex-direction:column;margin-bottom:25px}
+.form-group label{margin-bottom:8px;color:#fff;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:1px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:14px 15px;border:1px solid #444;outline:none;background:#1c1c1c;color:#fff;font-family:inherit;font-size:.95rem;transition:.3s ease}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:#19d9ff;box-shadow:0 0 0 2px rgba(25,217,255,.15)}
+.form-group textarea{resize:vertical;min-height:150px}
+.form-button{width:100%;padding:16px;border:2px solid #19d9ff;background:#19d9ff;color:#111;cursor:pointer;font-size:.8rem;font-weight:900;letter-spacing:1px;transition:.3s ease}
+.form-button:hover{background:#ff2ea6;border-color:#ff2ea6;color:#fff;transform:translateY(-3px)}
+.success-message{padding:20px;margin-bottom:25px;border-left:4px solid #19d9ff;background:#1c1c1c}
+.success-message strong{color:#19d9ff;font-size:.85rem}
+.success-message p{margin-top:5px;color:#aaa;font-size:.9rem}
+.contact-bottom{padding:100px 7%;background:#f2f2f2;text-align:center}
+.contact-bottom h2{max-width:700px;margin:10px auto 30px;font-size:clamp(2.5rem,5vw,4.5rem);line-height:.95}
+
+/* ---------- LOGIN ---------- */
+/* ---------- LOGIN ---------- */
+.login-section{min-height:650px;padding:90px 7%;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;background:#fff}
+.login-panel{padding:45px;background:#fff;border:2px solid #111;box-shadow:10px 10px 0 #19d9ff}
+.login-panel h1{font-size:clamp(2.5rem,5vw,4rem);line-height:1;margin:15px 0}
+.login-panel h1 span{color:#ff2ea6}
+.login-description{color:#666;line-height:1.7;margin-bottom:35px}
+.login-form{display:flex;flex-direction:column}
+.login-form .form-button{width:100%;margin-top:5px}
+.login-message{padding:15px 18px;margin-bottom:25px;border-left:4px solid #19d9ff;background:#f4f4f4}
+.login-message strong{display:block;margin-bottom:5px}
+.login-message p{margin:0;color:#666;font-size:14px;line-height:1.5}
+.error-login{border-left-color:#ff2ea6}
+.login-links{text-align:center;margin-top:25px;border-top:1px solid #ddd;padding-top:25px}
+.login-links p{margin:0 0 8px;color:#666;font-size:14px}
+.login-links a{color:#111;font-weight:bold}
+.login-links a:hover{color:#ff2ea6}
+.login-side{padding:20px 0}
+.login-system{display:inline-flex;align-items:center;gap:10px;margin-bottom:25px;font-size:12px;font-weight:bold;letter-spacing:1px}
+.system-dot{width:9px;height:9px;background:#19d9ff;border-radius:50%;animation:pulseDot 1.5s infinite}
+.login-side h2{font-size:clamp(2.5rem,5vw,4rem);line-height:1;margin-bottom:25px}
+.login-side h2 span{color:#19d9ff}
+.login-side>p{max-width:480px;color:#666;line-height:1.8}
+.login-features{margin-top:40px;display:flex;flex-direction:column;gap:25px}
+.login-feature{display:flex;gap:18px;align-items:flex-start}
+.login-feature>strong{min-width:42px;height:42px;display:flex;align-items:center;justify-content:center;background:#111;color:#19d9ff;font-size:12px}
+.login-feature h3{margin:0 0 5px;font-size:17px}
+.login-feature p{margin:0;color:#777;font-size:14px}
+@keyframes pulseDot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+/* ---------- REGISTRO ---------- */
+.register-section{max-width:1150px;margin:0 auto;padding:90px 8%;display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}
+.register-side{padding:20px 0}
+.register-side h1{font-size:42px;line-height:1.1;margin:15px 0 20px}
+.register-side h1 span{color:#19d9ff}
+.register-side>p{color:#666;line-height:1.8;max-width:450px}
+.register-benefits{margin-top:40px;display:flex;flex-direction:column;gap:25px}
+.register-benefit{display:flex;align-items:flex-start;gap:18px}
+.register-benefit>span{min-width:42px;height:42px;display:flex;align-items:center;justify-content:center;background:#111;color:#19d9ff;font-size:12px;font-weight:bold}
+.register-benefit strong{display:block;margin-bottom:5px}
+.register-benefit p{margin:0;color:#777;font-size:14px}
+.register-panel{background:#f7f7f7;border:1px solid #e5e5e5;padding:45px}
+.register-panel h2{font-size:34px;margin:15px 0 10px}
+.register-description{color:#666;margin-bottom:30px}
+.register-form{display:flex;flex-direction:column}
+.register-form .form-row{margin-bottom:0}
+.register-form .form-button{width:100%}
+
+/* ---------- RESERVACIONES ---------- */
+.reservacion{width:90%;max-width:850px;margin:90px auto;padding:50px;background:#111;color:#fff;border-top:5px solid #19d9ff;box-shadow:10px 10px 0 #ff2ea6}
+.reservacion h2{font-size:clamp(2.5rem,5vw,4rem);line-height:1;margin-bottom:15px}
+.reservacion h2::after{content:"";display:block;width:70px;height:4px;background:#ff2ea6;margin-top:15px}
+.reservacion>p{color:#aaa;margin-bottom:40px;font-size:1rem}
+.reservacion form{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.reservacion label{display:block;margin-bottom:8px;color:#fff;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:1px}
+.reservacion input,.reservacion select,.reservacion textarea{width:100%;padding:14px 15px;border:1px solid #444;outline:none;background:#1c1c1c;color:#fff;font-family:inherit;font-size:.95rem;transition:.3s ease}
+.reservacion input:focus,.reservacion select:focus,.reservacion textarea:focus{border-color:#19d9ff;box-shadow:0 0 0 2px rgba(25,217,255,.15)}
+.reservacion textarea{min-height:140px;resize:vertical}
+.reservacion label:nth-of-type(7),.reservacion textarea{grid-column:1/3}
+.reservacion button{grid-column:1/3;width:100%;padding:16px;border:2px solid #19d9ff;background:#19d9ff;color:#111;cursor:pointer;font-size:.8rem;font-weight:900;letter-spacing:1px;transition:.3s ease}
+.reservacion button:hover{background:#ff2ea6;border-color:#ff2ea6;color:#fff;transform:translateY(-3px)}
+.mensaje{grid-column:1/3;padding:20px;margin-bottom:0;border-left:4px solid #19d9ff;background:#1c1c1c;color:#fff;font-weight:700}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:1000px){
+nav{gap:15px}
+nav a{font-size:.75rem}
+.hero{gap:40px}
+.service-cards{grid-template-columns:repeat(2,1fr)}
+.value-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:900px){
+.catalog-card{grid-template-columns:60px 1fr;gap:25px}
+.catalog-price{grid-column:2;align-items:flex-start;text-align:left}
+.contact-section{grid-template-columns:1fr;gap:60px}
+.login-section{grid-template-columns:1fr;gap:50px}
+.register-section{grid-template-columns:1fr;gap:45px}
+}
+@media(max-width:768px){
+header{flex-direction:column;gap:20px;padding:20px 5%}
+nav{flex-wrap:wrap;justify-content:center}
+.hero{flex-direction:column;padding:70px 5%;text-align:center}
+.hero-text{width:100%}
+.hero-text>p:not(.status){margin-left:auto;margin-right:auto}
+.hero-buttons{justify-content:center;flex-wrap:wrap}
+.hero-device{width:100%;margin-top:50px}
+.laptop{width:380px}
+.repairlive{grid-template-columns:1fr;padding:80px 5%}
+.about-preview{grid-template-columns:1fr;gap:30px;padding:80px 5%}
+.services-preview{padding:80px 5%}
+.page-header{min-height:400px;padding:80px 5%}
+.page-header h1{letter-spacing:-2px}
+.about-company{grid-template-columns:1fr;gap:40px;padding:80px 5%}
+.mission-vision{grid-template-columns:1fr}
+.info-block{min-height:auto;padding:60px 5%}
+.info-block h2{margin-top:40px}
+.values{padding:80px 5%}
+.value-grid{grid-template-columns:repeat(2,1fr)}
+.difference{grid-template-columns:1fr;gap:50px;padding:80px 5%}
+.services-intro{grid-template-columns:1fr;gap:35px;padding:80px 5%}
+.catalog{padding:0 5% 80px}
+.catalog-card{grid-template-columns:1fr;gap:15px;padding:30px}
+.catalog-number{margin-bottom:10px}
+.catalog-price{grid-column:auto;margin-top:15px}
+.service-note{grid-template-columns:1fr;gap:35px;padding:80px 5%}
+.contact-section{padding:80px 5%}
+.contact-form{padding:30px;box-shadow:7px 7px 0 #ff2ea6}
+.contact-bottom{padding:80px 5%}
+.login-section{padding:55px 6%}
+.login-panel{padding:30px 25px}
+.register-section{padding:55px 6%}
+.register-panel{padding:30px 25px}
+.reservacion{width:90%;padding:30px;box-shadow:7px 7px 0 #ff2ea6}
+.reservacion form{grid-template-columns:1fr}
+.reservacion label:nth-of-type(7),.reservacion textarea,.reservacion button,.mensaje{grid-column:auto}
+}
+@media(max-width:600px){
+.login-panel h1{font-size:32px}
+.login-side h2{font-size:30px}
+}
+@media(max-width:500px){
+.logo{font-size:1.5rem}
+nav{gap:10px}
+nav a{font-size:.7rem}
+.hero h1{letter-spacing:-2px}
+.hero-buttons{flex-direction:column}
+.btn{width:100%}
+.service-cards{grid-template-columns:1fr}
+.service-card{min-height:auto}
+.laptop{width:300px}
+.repairlive{padding:70px 5%}
+.value-grid{grid-template-columns:1fr}
+.value-card{min-height:auto}
+.difference-list>div{min-height:75px}
+.catalog-card{padding:25px}
+.catalog-content h2{font-size:1.5rem}
+.catalog-content ul{flex-direction:column;gap:8px}
+.service-button{width:100%}
+.contact-form{padding:20px;box-shadow:5px 5px 0 #ff2ea6}
+}/* ---------- PÁGINA REPAIRLIVE ---------- */
+.repairlive-page{max-width:1050px;margin:0 auto;padding:90px 7%}
+.repairlive-header{text-align:center;max-width:700px;margin:0 auto}
+.repairlive-header h2{margin-top:10px;font-size:clamp(3rem,6vw,5rem);line-height:.9;font-weight:900;letter-spacing:-3px}
+.repairlive-header h2 span{color:#19d9ff}
+.repairlive-header>p:last-child{margin:25px auto 0;color:#666;line-height:1.7}
+.repairlive-form{max-width:650px;margin:55px auto 0;display:grid;grid-template-columns:1fr 220px;gap:15px}
+.repairlive-form label{grid-column:1/3;margin-bottom:-5px;color:#111;font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:1px}
+.repairlive-form input{width:100%;padding:16px;border:2px solid #111;background:#fff;color:#111;outline:none;font-family:inherit;font-size:1rem;text-transform:uppercase}
+.repairlive-form input:focus{border-color:#19d9ff;box-shadow:4px 4px 0 #ff2ea6}
+.repairlive-form button{border:2px solid #111;background:#111;color:#fff;cursor:pointer;font-size:.75rem;font-weight:900;letter-spacing:1px;transition:.3s ease}
+.repairlive-form button:hover{background:#19d9ff;border-color:#19d9ff;color:#111;transform:translateY(-3px)}
+.repair-result{position:relative;margin-top:70px;padding:45px;border:2px solid #111;background:#fff;box-shadow:10px 10px 0 #19d9ff}
+.repair-result-top{display:flex;align-items:center;justify-content:space-between;padding-bottom:30px;border-bottom:1px solid #ddd}
+.repair-result-top small,.repair-device small{display:block;color:#888;font-size:.7rem;font-weight:900;letter-spacing:2px}
+.repair-result-top strong{display:block;margin-top:5px;font-size:1.5rem;letter-spacing:1px}
+.repair-status{display:flex;align-items:center;gap:10px;font-size:.7rem;font-weight:900;letter-spacing:1px;color:#ff2ea6}
+.repair-status span{width:9px;height:9px;border-radius:50%;background:#ff2ea6;box-shadow:0 0 0 4px #ffe5f2;animation:pulseDot 1.5s infinite}
+.repair-device{padding:35px 0}
+.repair-device h3{margin-top:8px;font-size:2rem}
+.repair-device p{max-width:650px;margin-top:8px;color:#666}
+.repair-tracking{position:relative;display:flex;justify-content:space-between;padding-top:35px;border-top:2px solid #111}
+.tracking-step{position:relative;width:19%;text-align:center;color:#999}
+.tracking-step>span{position:relative;z-index:2;display:flex;width:45px;height:45px;margin:-58px auto 15px;align-items:center;justify-content:center;border:2px solid #bbb;border-radius:50%;background:#fff;font-size:.7rem;font-weight:900}
+.tracking-step strong{display:block;color:#777;font-size:.8rem}
+.tracking-step small{display:block;margin-top:4px;color:#aaa;font-size:.65rem}
+.tracking-step.completed>span{border-color:#19d9ff;background:#111;color:#19d9ff}
+.tracking-step.completed strong{color:#111}
+.tracking-step.active>span{border-color:#ff2ea6;background:#ff2ea6;color:#fff;box-shadow:0 0 0 5px #fff,0 0 0 7px #ff2ea6}
+.tracking-step.active strong{color:#111}
+.tracking-step.active small{color:#ff2ea6}
+@media(max-width:700px){
+.repairlive-page{padding:70px 5%}
+.repairlive-form{grid-template-columns:1fr}
+.repairlive-form label{grid-column:auto}
+.repairlive-form button{min-height:50px}
+.repair-result{padding:30px;box-shadow:7px 7px 0 #19d9ff}
+.repair-result-top{flex-direction:column;align-items:flex-start;gap:20px}
+.repair-tracking{flex-direction:column;gap:25px;padding-top:30px;border-top:0;border-left:2px solid #111}
+.tracking-step{width:100%;display:flex;align-items:center;gap:15px;text-align:left}
+.tracking-step>span{flex-shrink:0;margin:0 0 0 -54px}
+}
